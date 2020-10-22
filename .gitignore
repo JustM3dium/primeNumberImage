@@ -1,0 +1,5 @@
+#Ignore the generated images
+*.bmp
+
+#Ignore the outputfile
+primegen
