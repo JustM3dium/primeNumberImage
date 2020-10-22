@@ -3,3 +3,6 @@
 
 #Ignore the outputfile
 primegen
+
+#ignore the EasyBMP folder
+/EasyBMP
