@@ -8,10 +8,17 @@
 
 
 int main(){
+    //user changable values
+    int n = 200000;
+    int width = 2000;
+    //origin point of for the line to start. off centern in this case because of how the prime line goes
+    int x = width/2, y = width/2;
+    //starting direction moving to the right. 
+    int direction = 1;
+
     //generate primes till n
-    int n = 10000000;
     std::vector<bool> primes;
-    primes.resize(30000000,true);
+    primes.resize(n,true);
 
     for( int p = 2; p*p <= n; p++){
         if(primes[p]){
@@ -22,14 +29,9 @@ int main(){
     }
     
     //general setup for the image
-    int width = 10000;
     EasyBMP::RGBColor black (0,0,0);
     EasyBMP::RGBColor white (255,255,255);
     EasyBMP::Image img(width,width, "runner.bmp", black);
-    //origin point of for the line to start. off centern in this case because of how the prime line goes
-    int x = 8000, y = 8000;
-    //starting direction moving to the right. 
-    int direction = 1;
     img.SetPixel(x, y, white);
 
     //position in the vector of primes
