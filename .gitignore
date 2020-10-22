@@ -1,5 +1,5 @@
 #Ignore the generated images
-*.bmp
+runner.bmp
 
 #Ignore the outputfile
 primegen
