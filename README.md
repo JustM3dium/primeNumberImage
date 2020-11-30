@@ -2,7 +2,10 @@
 Based on a post made on reddit.com/rGenerates an image based on the occurrence of prime numbers in the spectrum of natural numbers/dataisbeautiful this programm generates the prime numbers up to a spciefied amount to then generate an imaged based on these numbers.
 Each time a prime number is encountered, while counting up the natural numbers a line drawn will make a 90° turn. For each iteration the line moves foward by one pixel.
 
-## installation
+## Difference
+So one might ask: "What is the difference to the original primeNumberImage project?" Well, did you ever think "Gee, my computer is doing some pretty cool stuff right now and still the task is over quickly? Isn't there something that slows things down to make the process feel better? This is exactly what this project offers! The code uses a so called "useless factor". This factor can be set as high or low as you like, which then influences the time the program takes to complete the task.
+                                                                                     
+## Installation
 Into the folder of this repository clone the EasyBMP repository:
 ```bash
 https://github.com/izanbf1803/EasyBMP
@@ -30,6 +33,7 @@ Depending on whether the line is supposed to reach the border of the image, eith
 * width = 2000
 * x,y = width/2
 * direction = 1
+* useless factor values = 3, 3
 ![](./sampleimages/default.bmp)
 
 ## Less primes
